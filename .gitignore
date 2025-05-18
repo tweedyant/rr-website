@@ -1,0 +1,34 @@
+# === Java / Maven ===
+/rr-backend/target/
+*.class
+*.log
+*.jar
+*.war
+*.iml
+*.ipr
+*.iws
+
+# Maven wrapper
+/mvnw
+/mvnw.cmd
+/.mvn/
+
+# === TypeScript / React ===
+/rr-frontend/node_modules/
+*.tsbuildinfo
+/rr-frontend/build/
+/rr-frontend/dist/
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === IDEs ===
+*.swp
+.idea/
+/.vscode/
+
+# === Environment files ===
+.env
+.env.local
+.env.*.local
