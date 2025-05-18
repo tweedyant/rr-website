@@ -6,11 +6,8 @@ import static spark.Spark.*;
  */
 public class App {
     public static void main(String[] args) {
-        port(8000);
-        get("/status", (req, res) ->{ 
-            return "backend is alive!";
-            });
-
-        System.out.println("Hello World!");
+        port(8080);
+        get("/status", (req, res) -> "Backend is alive!");
+        System.out.println("Server started at http://localhost:8080/status");
     }
 }
