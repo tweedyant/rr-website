@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/NavBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home'
+import Dao from './pages/Dao'
+import Members from './pages/Members';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://rr-website.onrender.com/status"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      
+
+      <BrowserRouter>
+      <Navbar></Navbar>
+      <Routes>
+      <Route path = "/" element = {<Home/>}/>
+      <Route path = "/members" element = {<Members/>}/>
+      <Route path = "/dao" element = {<Dao/>}/>
+      </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }
